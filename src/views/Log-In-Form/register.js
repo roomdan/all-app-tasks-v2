@@ -35,7 +35,7 @@ export default function Register () {
     }
 
     return (
-      NextStep?  <div className='w-screen md:h-screen h-auto bg-white flex-col text-gray aninmations'>
+      true?  <div className='w-screen md:h-screen h-auto bg-white flex-col text-gray aninmations'>
       <div className='w-full h-24 bg-transparent text-blue font-bold flex justify-end items-center p-5'>
           Do You Need Help?
       </div>
@@ -67,7 +67,7 @@ export default function Register () {
               <Link className='m-2 text-blue font-bold' to='/home'>Go Back</Link> <button className='m-2 text-red font-bold' onClick={()=>{setRegister({...register, onSesion:false})}}>Sign off</button>
               </div>}
       </div>
-  </div>:<Go start={true} none={()=>{setNexStep(true);history.push('/home') }}/>
+  </div>:<Go start={true} none={()=>{setNexStep(true);history.push('/home')}}/>
     )
 
 }
