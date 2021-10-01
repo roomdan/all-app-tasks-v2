@@ -35,7 +35,7 @@ export default function Register () {
     }
 
     return (
-      true?  <div className='w-screen md:h-screen h-auto bg-white flex-col text-gray aninmations'>
+      NextStep?  <div className='w-screen md:h-screen h-auto bg-white flex-col text-gray aninmations'>
       <div className='w-full h-24 bg-transparent text-blue font-bold flex justify-end items-center p-5'>
           Do You Need Help?
       </div>

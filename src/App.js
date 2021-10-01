@@ -1,27 +1,22 @@
 import { Suspense } from "react";
-import { lazy } from "react";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
 import LogIn from "./context/logs/LogSesion";
+import Register from "./views/Log-In-Form//register.js"
+import Home from "./views/home/Home.js"
 
 
 function App() {
 
-  const Register = lazy(()=>import("./views/Log-In-Form/register"));
-  const Home = lazy(()=>import("./views/home/Home"))
 
   return (
      <Router>
        <LogIn>
          <Switch>
            <Route exact path='/'>
-             <Suspense fallback={<p>cargando</p>}>
-                <Register/>
-             </Suspense>
+              <Register/>
            </Route>
            <Route exact path='/home'>
-           <Suspense fallback={<p>cargando</p>}>
-                <Home charging={true}/>
-             </Suspense>
+             <Home charging={true}></Home>
            </Route>
          </Switch>
        </LogIn>
