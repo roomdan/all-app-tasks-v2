@@ -20,7 +20,7 @@ function App() {
            </Route>
            <Route exact path='/home'>
            <Suspense fallback={<p>cargando</p>}>
-                <Home/>
+                <Home charging={true}/>
              </Suspense>
            </Route>
          </Switch>

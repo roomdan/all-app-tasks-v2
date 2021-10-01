@@ -4,9 +4,9 @@ module.exports = {
   theme: {
     colors: {
       transparent:'transparent',
-      gray: '#AAAAAA',
-      blue: '#1C0C5B',
-      lblue:'#D3E0EA',
+      gray: '#444444',
+      blue: '#5C7AEA',
+      lblue:'#822efe',
       purple: '#3D2C8D',
       ligthPurple:'#916BBF',
       pink:'#C996CC',
@@ -15,7 +15,7 @@ module.exports = {
       red:'red',
       yellow:'#fabc41',
       green:'#B1E693',
-      dark:'#171717'
+      dark:'#1e1722'
     },
   },
   variants: {
